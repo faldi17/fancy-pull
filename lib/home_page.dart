@@ -17,6 +17,9 @@ class HomePage extends StatelessWidget {
         onRefresh: _handleRefresh,
         color: Colors.lightBlue[200],
         height: 300,
+        backgroundColor: Colors.white,
+        animSpeedFactor: 6,
+        showChildOpacityTransition: false,
         child: ListView(
           children: [
             Padding(
