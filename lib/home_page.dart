@@ -5,6 +5,19 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.lightBlue[400],
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: ClipRRect(
+              borderRadius: BorderRadiusGeometry.circular(20),
+              child: Container(height: 300, color: Colors.lightBlue[600]),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
